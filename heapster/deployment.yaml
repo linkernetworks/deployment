@@ -20,4 +20,4 @@ spec:
         - /heapster
         - --source=kubernetes:https://kubernetes.default
         - --sink=influxdb:http://monitoring-influxdb.kube-system.svc:8086
-        - --metric_resolution=1s
+        - --metric_resolution=5s
