@@ -12,7 +12,9 @@ metadata:
   namespace: kube-system
 spec:
   ports:
-  - port: 80
+  - nodePort: 30082
+    port: 80
     targetPort: 8082
   selector:
     k8s-app: mon-heapster
+  type: NodePort
